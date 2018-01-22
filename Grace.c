@@ -1,6 +1,9 @@
 #include <stdio.h>
-int lol(){return 0;}int main(){FILE *file=fopen("Grace_kid.c", "w+");
+#include <fcntl.h>
+#define A "Grace_kid.c"
+#define B 1537
 /*
-   TATO
+   TATA
 */
-lol();char *a="#include <stdio.h>%cint lol(){return 0;}int main(){FILE *file=fopen(%cGrace_kid.c%c, %cw+%c);%c/*%c   TATO%c*/%clol();char *a=%c%s%c;fprintf(file,a,10,34,34,34,34,10,10,10,10,34,a,34,10);}%c";fprintf(file,a,10,34,34,34,34,10,10,10,10,34,a,34,10);}
+#define FT()int main(){int f=open(A, B, 0644);char *a="#include <stdio.h>%c#include <fcntl.h>%c#define A %cGrace_kid.c%c%c#define B 1537%c/*%c   TATA%c*/%c#define FT()int main(){int f=open(A, B, 0644);char *a=%c%s%c;dprintf(f,a,10,10,34,34,10,10,10,10,10,34,a,34,10,10);}%cFT()%c";dprintf(f,a,10,10,34,34,10,10,10,10,10,34,a,34,10,10);}
+FT()
